@@ -83,7 +83,9 @@ img {
 }
 
 
-
+video {
+  width: 100%;
+}
 
 
 /**********************************************************
@@ -93,7 +95,7 @@ img {
 
 #homepage-grid {
   display: grid;
-  grid-template-rows: 100px auto auto 100px;
+  grid-template-rows: 150px auto auto 100px;
   height: 100vh;
 }
 
@@ -115,11 +117,7 @@ header {
   grid-template-columns: repeat(4, 1fr);
   // grid-template-rows: repeat(2, 1fr);
   grid-template-rows: 100px;
-
-  
-
-  
-  
+ 
 }
 
 nav {
@@ -258,7 +256,7 @@ INDIVIDUAL WORK PAGES
 
 .work-grid-6 {
   display: grid;
-  grid-gap: 10px;
+  grid-gap: 20px;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: auto;
   padding: 0 20px;
@@ -278,22 +276,27 @@ INDIVIDUAL WORK PAGES
     box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.18);
     padding: 10px;
   }
-  .hms-4 {
+  #hms-4 {
     grid-column: 1 / span 2;
   }
-  .hms-5 {
+  #hms-5 {
     grid-column: 3 / span 2;
   }
-  .hms-6 {
+  #hms-6 {
     grid-column: 5 / span 2;
   }
-  .cssiav-4 {
+  #cssiav-4 {
     grid-column: 2 / span 4;
   }
-  
-    
+  #instock-mobile-video {
+    grid-column: 1 / span 3;
+  }
+  #jgarland-mobile-video {
+    grid-column: 1 / span 3;
+  }
   
 }
+
 
 
 
