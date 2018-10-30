@@ -23,8 +23,18 @@ img {
   width: 100%; }
 
 /**********************************************************
-HOME PAGE-GRID
+ PAGE-GRIDS
 **********************************************************/
+#homepage-grid {
+  display: grid;
+  grid-template-rows: 100px auto auto 100px;
+  height: 100vh; }
+
+.single-workpage-grid {
+  display: grid;
+  grid-template-rows: 100px 1fr 100px;
+  height: 100vh; }
+
 /**********************************************************
 HEADER
 **********************************************************/
@@ -33,7 +43,6 @@ header {
   display: grid;
   grid-gap: 1em;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
   grid-template-rows: 100px; }
 
 nav {
@@ -89,21 +98,23 @@ INTRO BLOCK
 /**********************************************************
 PROJECT CARDS
 **********************************************************/
+.project-cards-bg {
+  background: #f0f0f0; }
+
+.max-width-1300 {
+  max-width: 1300px;
+  margin: 0 auto; }
+
 .project-cards {
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  margin: 0 auto;
   margin-top: 50px;
-  padding: 20px 30px;
-  max-width: 1300px; }
+  padding: 20px 30px; }
 
 .full-width-title {
   grid-column: 1 / -1;
   margin-bottom: 20px; }
-
-.project-cards-bg {
-  background: #f0f0f0; }
 
 .card {
   padding: 10px;
@@ -123,7 +134,7 @@ PROJECT CARDS
 /**********************************************************
 INDIVIDUAL WORK PAGES
 **********************************************************/
-.individual-work-grid-6 {
+.work-grid-6 {
   display: grid;
   grid-gap: 10px;
   grid-template-columns: repeat(6, 1fr);
@@ -131,24 +142,24 @@ INDIVIDUAL WORK PAGES
   padding: 0 20px;
   max-width: 900px;
   margin: 0 auto; }
-  .individual-work-grid-6 h1 {
+  .work-grid-6 h1 {
     grid-column: 1 / -1;
     margin: 0 0 2rem; }
-  .individual-work-grid-6 p {
+  .work-grid-6 p {
     grid-column: 1 / -1;
     margin: 0 0 2rem; }
-  .individual-work-grid-6 img {
+  .work-grid-6 img {
     max-width: 100%;
     height: auto;
     box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.18);
     padding: 10px; }
-  .individual-work-grid-6 .hms-4 {
+  .work-grid-6 .hms-4 {
     grid-column: 1 / span 2; }
-  .individual-work-grid-6 .hms-5 {
+  .work-grid-6 .hms-5 {
     grid-column: 3 / span 2; }
-  .individual-work-grid-6 .hms-6 {
+  .work-grid-6 .hms-6 {
     grid-column: 5 / span 2; }
-  .individual-work-grid-6 .cssiav-4 {
+  .work-grid-6 .cssiav-4 {
     grid-column: 2 / span 4; }
 
 /**********************************************************
