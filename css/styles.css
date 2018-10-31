@@ -146,27 +146,18 @@ INDIVIDUAL WORK PAGES
   padding: 0 20px;
   max-width: 900px;
   margin: 0 auto; }
-  .work-grid-6 h1 {
-    grid-column: 1 / -1;
-    margin: 0 0 2rem; }
+  .work-grid-6 h2 {
+    grid-column: 1 / -1; }
+  .work-grid-6 ul {
+    padding: 0; }
+    .work-grid-6 ul li {
+      font-size: 14px;
+      text-transform: uppercase; }
   .work-grid-6 p {
     grid-column: 1 / -1;
     margin: 0 0 2rem; }
   .work-grid-6 .work-description {
     grid-column: 1 / -1; }
-  .work-grid-6 .work-list-title {
-    margin: 0 0;
-    font-weight: 600; }
-  .work-grid-6 .work-list-title::after {
-    content: '';
-    display: block;
-    height: 1px;
-    width: 200px;
-    background: #1064e0; }
-  .work-grid-6 .work-list {
-    grid-column: 1 / span 4;
-    margin-bottom: 50px;
-    padding-left: 0; }
   .work-grid-6 img {
     max-width: 100%;
     height: auto;
