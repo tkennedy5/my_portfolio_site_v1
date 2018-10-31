@@ -9,7 +9,8 @@ GLOBAL
   margin: 0; }
 
 p {
-  font-size: 1rem; }
+  font-size: 1rem;
+  color: #363636; }
 
 h1,
 h2,
@@ -20,10 +21,10 @@ h6 {
   color: #444444; }
 
 img {
-  width: 100%; }
+  max-width: 100%; }
 
 video {
-  width: 100%; }
+  max-width: 100%; }
 
 /**********************************************************
  PAGE-GRIDS
@@ -31,12 +32,12 @@ video {
 #homepage-grid {
   display: grid;
   grid-template-rows: 150px auto auto 100px;
-  height: 100vh; }
+  min-height: 100vh; }
 
 .single-workpage-grid {
   display: grid;
-  grid-template-rows: 100px 1fr 100px;
-  height: 100vh; }
+  grid-template-rows: 150px 1fr 100px;
+  min-height: 100vh; }
 
 /**********************************************************
 HEADER
@@ -151,9 +152,27 @@ INDIVIDUAL WORK PAGES
   .work-grid-6 p {
     grid-column: 1 / -1;
     margin: 0 0 2rem; }
+  .work-grid-6 .work-description {
+    grid-column: 1 / -1; }
+  .work-grid-6 .work-list-title {
+    margin: 0 0;
+    font-weight: 600; }
+  .work-grid-6 .work-list-title::after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 200px;
+    background: #1064e0; }
+  .work-grid-6 .work-list {
+    grid-column: 1 / span 4;
+    margin-bottom: 50px;
+    padding-left: 0; }
   .work-grid-6 img {
     max-width: 100%;
     height: auto;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.18);
+    padding: 10px; }
+  .work-grid-6 video {
     box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.18);
     padding: 10px; }
   .work-grid-6 #hms-4 {

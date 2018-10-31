@@ -32,6 +32,7 @@ GLOBAL
   
 p {
   font-size: 1rem;
+  color: #363636;
 }
 
 // h1 {
@@ -79,12 +80,12 @@ h6 {
 
 
 img {
-  width: 100%;
+  max-width: 100%;
 }
 
 
 video {
-  width: 100%;
+  max-width: 100%;
 }
 
 
@@ -96,13 +97,13 @@ video {
 #homepage-grid {
   display: grid;
   grid-template-rows: 150px auto auto 100px;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .single-workpage-grid {
   display: grid;
-  grid-template-rows: 100px 1fr 100px;
-  height: 100vh;
+  grid-template-rows: 150px 1fr 100px;
+  min-height: 100vh;
 }
 
 
@@ -270,9 +271,33 @@ INDIVIDUAL WORK PAGES
     grid-column: 1 / -1;
     margin: 0 0 2rem;
   }
+  .work-description {
+    grid-column: 1 / -1;
+  }
+  .work-list-title {
+    margin: 0 0;
+    font-weight: 600;
+  }
+  .work-list-title::after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 200px;
+    background: rgb(16, 100, 224);
+
+  }
+  .work-list {
+    grid-column: 1 / span 4;
+    margin-bottom: 50px;
+    padding-left: 0;
+  }
   img {
     max-width: 100%;
     height: auto;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.18);
+    padding: 10px;
+  }
+  video {
     box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.18);
     padding: 10px;
   }
