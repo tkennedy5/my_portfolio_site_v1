@@ -1,13 +1,7 @@
 change media queries to min base queries
 
-    
-
-tweak up the works page - make images better - try to incorporate different
-    size images
-
-    take some custom smaller screen shots of important areas of the sites / mobile views 
-
 
 
     work on resizing some fonts (intro heading, client work titles) as the screen gets smaller - but do this starting small and work up
 
+clean up color variables (also how do css color variables work)

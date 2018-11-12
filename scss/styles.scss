@@ -3,8 +3,7 @@ $title-white: rgba(255, 255, 255, .9);
 $title-white-hover: rgba(255, 255, 255, .6);
 $card-bg-black: #363636;
 $card-txt-gray: rgba(255, 255, 255, .75);
-$project-card-blue: rgb(16, 100, 224);
-$project-title-hover: rgb(16, 100, 224);
+$main-blue: rgb(16, 100, 224);
 $nav-links: rgb(102, 102, 102);
 $nav-links-hover: rgb(171, 171, 171);
 $nav-border: rgb(16, 100, 224);
@@ -96,16 +95,19 @@ video {
 **********************************************************/
 
 
-#homepage-grid {
-  display: grid;
-  grid-template-rows: auto auto auto 100px;
-  min-height: 100vh;
-}
+// #homepage-grid {
+//   display: grid;
+//   // grid-template-rows: auto auto auto 100px;
+//   grid-template-rows: auto;
+//   // min-height: 100vh;
+// }
 
 .single-workpage-grid {
   display: grid;
-  grid-template-rows: 150px 1fr 100px;
-  min-height: 100vh;
+  grid-template-columns: minmax(1em, 1fr) minmax(300px, 950px) minmax(1em, 1fr);
+  grid-template-rows: auto;
+  // min-height: 100vh;
+  margin-top: 40px;
 }
 
 
@@ -116,9 +118,8 @@ HEADER
 header {
   background: rgba(255, 255, 255, .95);
   display: grid;
-  grid-gap: 1em;
+  grid-gap: 20px;
   grid-template-columns: repeat(4, 1fr);
-  // grid-template-rows: repeat(2, 1fr);
   grid-template-rows: 100px;
  
 }
@@ -130,17 +131,19 @@ header {
   align-self: center;
   h1 {
     font-weight: 600;
+    font-size: 1.4em
   }
   ul {
     padding-left: 0;
     font-size: 14px;
   }
   a {
-    color: $project-card-blue;
+    color: $main-blue;
   }
 }
 
 nav {
+  margin-top: 60px;
   grid-column: 3 / span 1;
   align-self: center;
   justify-self: center;
@@ -182,10 +185,12 @@ INTRO BLOCK
 
 
 
+
 .intro-block {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1em;
+  padding: 50px 0;
 }
 
 .box {
@@ -194,7 +199,7 @@ INTRO BLOCK
   grid-column: 1 / span 2;
   grid-row: 1 / span 1;
   align-self: start;
-  margin: 60px 40px;
+  margin: 60px 0;
   -webkit-clip-path: polygon(0 0, 100% 0, 75% 100%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 75% 100%, 0 100%);
 }
@@ -250,25 +255,35 @@ PROJECT CARDS
 .card {
   padding: 10px;
   background: #fff;
+  border-bottom: 10px solid #f0f0f0;
+  transition: border-bottom .4s;
+}
+
+.card:hover {
+    border-bottom: 10px solid $main-blue;
 }
 
 
+
 .project-title {
-  padding: 10px 0;
+  padding: 5px 0;
   margin-right: 20px;
   font-weight: 400;
   a {
     color: $title-black;
   }
   a:hover {
-    color: $project-card-blue;
+    color: $main-blue;
   }
   .fa-long-arrow-alt-right {
     margin-left: 10px;
    }
 }
   
-
+.fillbox {
+  max-width: 100%;
+  background: blue;
+}
 
 
 /**********************************************************
@@ -277,6 +292,7 @@ INDIVIDUAL WORK PAGES
 
 
 .work-grid-6 {
+  grid-column: 2 / span 1;
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(6, 1fr);
@@ -392,11 +408,15 @@ MEDIA QUERIES
 /*changes navigation links to horizontal*/
 
 @media (min-width:500px) {
+  nav {
+    margin-top: 0;
+  }
   nav ul {
     display: grid;
     grid-auto-flow: column;
     
   }
+  
 }
 
 
