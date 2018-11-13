@@ -29,11 +29,21 @@ video {
 /**********************************************************
  PAGE-GRIDS
 **********************************************************/
-.single-workpage-grid {
+.single-column-grid {
   display: grid;
   grid-template-columns: minmax(1em, 1fr) minmax(300px, 950px) minmax(1em, 1fr);
   grid-template-rows: auto;
-  margin-top: 40px; }
+  margin-top: 50px; }
+
+.grid-6 {
+  grid-column: 2 / span 1;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto;
+  padding: 0 20px;
+  max-width: 900px;
+  margin: 0 auto; }
 
 /**********************************************************
 HEADER
@@ -52,11 +62,13 @@ header {
   .logo h1 {
     font-weight: 600;
     font-size: 1.4em; }
+    .logo h1 a {
+      color: #444444; }
   .logo ul {
     padding-left: 0;
     font-size: 14px; }
-  .logo a {
-    color: #1064e0; }
+    .logo ul a {
+      color: #1064e0; }
 
 nav {
   margin-top: 60px;
@@ -67,19 +79,13 @@ nav {
     margin-left: 20px;
     padding: 5px 10px; }
     nav li a {
+      cursor: pointer;
+      padding: 10px 10px;
       color: #666666;
       transition: color .3s; }
     nav li :hover {
-      color: #ababab; }
-    nav li ::after {
-      content: '';
-      display: block;
-      width: 0;
-      height: 1px;
-      background: #1064e0;
-      transition: width .3s; }
-    nav li :hover::after {
-      width: 100%; }
+      color: #ababab;
+      background: gray; }
 
 /**********************************************************
 INTRO BLOCK
@@ -158,48 +164,65 @@ PROJECT CARDS
 /**********************************************************
 INDIVIDUAL WORK PAGES
 **********************************************************/
-.work-grid-6 {
-  grid-column: 2 / span 1;
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: auto;
-  padding: 0 20px;
-  max-width: 900px;
-  margin: 0 auto; }
-  .work-grid-6 h2 {
-    grid-column: 1 / -1; }
-  .work-grid-6 ul {
-    grid-column: 1 / -1;
-    padding: 0; }
-    .work-grid-6 ul li {
-      font-size: 14px;
-      text-transform: uppercase; }
-  .work-grid-6 p {
-    grid-column: 1 / -1;
-    margin: 0 0 2rem; }
-  .work-grid-6 .work-description {
-    grid-column: 1 / -1; }
-  .work-grid-6 img {
-    max-width: 100%;
-    height: auto;
-    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.18);
-    padding: 10px; }
-  .work-grid-6 video {
-    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.18);
-    padding: 10px; }
-  .work-grid-6 #hms-4 {
-    grid-column: 1 / span 2; }
-  .work-grid-6 #hms-5 {
-    grid-column: 3 / span 2; }
-  .work-grid-6 #hms-6 {
-    grid-column: 5 / span 2; }
-  .work-grid-6 #cssiav-4 {
-    grid-column: 2 / span 4; }
-  .work-grid-6 #instock-mobile-video {
-    grid-column: 1 / span 3; }
-  .work-grid-6 #jgarland-mobile-video {
-    grid-column: 1 / span 3; }
+.single-work h2 {
+  grid-column: 1 / -1; }
+.single-work ul {
+  grid-column: 1 / -1;
+  padding: 0; }
+  .single-work ul li {
+    font-size: 14px;
+    text-transform: uppercase; }
+.single-work p {
+  grid-column: 1 / -1;
+  margin: 0 0 2rem; }
+.single-work .work-description {
+  grid-column: 1 / -1; }
+.single-work img {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.18);
+  padding: 10px; }
+.single-work video {
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.18);
+  padding: 10px; }
+.single-work #hms-4 {
+  grid-column: 1 / span 2; }
+.single-work #hms-5 {
+  grid-column: 3 / span 2; }
+.single-work #hms-6 {
+  grid-column: 5 / span 2; }
+.single-work #cssiav-4 {
+  grid-column: 2 / span 4; }
+.single-work #instock-mobile-video {
+  grid-column: 1 / span 3; }
+.single-work #jgarland-mobile-video {
+  grid-column: 1 / span 3; }
+
+/**********************************************************
+ALL WORK PAGE
+**********************************************************/
+.all-work h2 {
+  grid-column: 1 / -1; }
+.all-work ul {
+  grid-column: 1 / -1;
+  padding: 0; }
+  .all-work ul li {
+    font-size: 14px;
+    text-transform: uppercase; }
+.all-work p {
+  grid-column: 1 / -1;
+  margin: 0 0 2rem; }
+.all-work .work-description {
+  grid-column: 1 / -1; }
+
+.work-intro-img {
+  padding-bottom: 5px;
+  background: #fff;
+  border-bottom: 10px solid #fff;
+  transition: border-bottom .4s; }
+
+.work-intro-img:hover {
+  border-bottom: 10px solid #1064e0; }
 
 /**********************************************************
 FOOTER
