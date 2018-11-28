@@ -1,10 +1,12 @@
 $black: #444444;
+$text-black: #363636;
 $white: rgba(255, 255, 255, .9);
 $bg-black: #363636;
 $main-blue: rgb(16, 100, 224);
-$nav-links: rgb(102, 102, 102);
-$nav-links-hover: rgb(171, 171, 171);
-$nav-links-active: rgb(171, 171, 171);
+$main-blue-dark: rgb(12, 77, 173);
+$nav-links: rgb(171, 171, 171);
+$nav-links-hover: rgb(102, 102, 102);
+$nav-links-active: rgb(102, 102, 102);
 
 
 $fb-color: rgb(109, 132, 180);
@@ -30,7 +32,7 @@ GLOBAL
   
 p {
   font-size: 1rem;
-  color: #363636;
+  color: $text-black;
 }
 
 // h1 {
@@ -77,6 +79,7 @@ h6 {
 // }
 
 
+
 img {
   max-width: 100%;
 }
@@ -94,18 +97,18 @@ video {
 
 // #homepage-grid {
 //   display: grid;
-//   // grid-template-rows: auto auto auto 100px;
-//   grid-template-rows: auto;
-//   // min-height: 100vh;
+//   grid-template-rows: 1fr 3fr 3fr 1fr;
+  
+ 
 // }
 
-.single-column-grid {
-  display: grid;
-  grid-template-columns: minmax(1em, 1fr) minmax(300px, 950px) minmax(1em, 1fr);
-  grid-template-rows: auto;
-  // min-height: 100vh;
-  margin-top: 50px;
-}
+// .single-column-grid {
+//   display: grid;
+//   grid-template-columns: minmax(1em, 1fr) minmax(300px, 950px) minmax(1em, 1fr);
+//   grid-template-rows: auto;
+//   // min-height: 100vh;
+//   margin-top: 50px;
+// }
 
 .grid-6 {
   grid-column: 2 / span 1;
@@ -132,20 +135,20 @@ header {
   grid-gap: 10px;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 50px;
-  padding: 10px 0;
+  padding: 20px 0;
   margin-bottom: 65px;
   border-bottom: 1px solid #e0e0e0;
  
 }
 
 
-.logo {
-  grid-column: 1 / -1;
-  justify-self: end;
-  margin-right: 40px;
+.logo-homepage {
+  grid-column: 1 / span 2;
+  justify-self: start;
+  margin-left: 40px;
   h1 {
     font-weight: 600;
-    font-size: 1.4em;
+    font-size: 1.3em;
     border-bottom: 2px solid $main-blue;
     :hover {
       border-bottom: 4px solid $main-blue;
@@ -155,7 +158,29 @@ header {
     }
   }
   p {
-    font-size: 14px;
+    font-size: 13px;
+    padding-top: 2px;
+  }
+}
+
+
+.logo {
+  grid-column: 1 / -1;
+  justify-self: end;
+  margin-right: 40px;
+  h1 {
+    font-weight: 600;
+    font-size: 1.3em;
+    border-bottom: 2px solid $main-blue;
+    :hover {
+      border-bottom: 4px solid $main-blue;
+    }
+    a {
+      color: $black;
+    }
+  }
+  p {
+    font-size: 13px;
     padding-top: 2px;
   }
 }
@@ -207,6 +232,16 @@ nav {
 //     margin-right: 40px;
 //   }
 // }
+
+@media (max-width:550px) {
+  .logo-homepage {
+    grid-column: 1 / -1;
+  }
+  nav {
+    grid-column: 1 / -1;
+  }
+}
+
 
 @media (min-width:900px) {
  nav li a::after {
@@ -287,7 +322,7 @@ PROJECT CARDS
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
-  padding: 20px 30px;
+  padding: 100px 30px;
 }
 
 .full-width-title {
@@ -322,11 +357,39 @@ PROJECT CARDS
     margin-left: 10px;
    }
 }
-  
-.fillbox {
-  max-width: 100%;
-  background: blue;
+
+.view-more {
+  display: grid;
+  grid-column: 1 / -1;
+  width: 95%;
+  margin-top: 15px;
+  justify-self: center;
+  justify-items: center;
+  h3 {
+    padding: 10px 0;
+  }
+  a {
+    background: $main-blue;
+    border-radius: 2px;
+    color: $white;
+    font-weight: 600;
+    padding: 10px 10px;
+  }
 }
+
+.view-more a:hover {
+  color: $main-blue-dark;
+  box-shadow: 3px 3px 1px 0px $main-blue-dark;
+}
+
+
+
+
+  
+// .fillbox {
+//   max-width: 100%;
+//   background: blue;
+// }
 
 
 /**********************************************************
@@ -429,6 +492,86 @@ ALL WORK PAGE
 .work-intro-img:hover {
     border-bottom: 10px solid $main-blue;
 }
+
+
+
+
+
+
+
+/**********************************************************
+ABOUT
+**********************************************************/
+
+.about {
+  margin-bottom: 50px;
+  h2 {
+    grid-column: 1 / -1;
+  }
+}
+
+.about-story {
+  grid-column: 1 / span 3;
+  padding-bottom: 30px;
+}
+
+.jammy {
+  grid-column: 4 / span 3; 
+  grid-row: 2;
+}
+.hula {
+  grid-column: 1 / span 3;
+  grid-row: 3;
+}
+
+.contact-info {
+  grid-column: 4 / span 3;
+  justify-self: center;
+  h2 {
+    margin: 20px 0;
+  }
+  a {
+    color: $text-black;
+    border-bottom: 1px solid $main-blue;
+  }
+}
+.contact-info a:hover {
+  color: $main-blue-dark;
+  border-bottom: 3px solid $main-blue;
+}
+
+.about-name {
+  padding: 5px 0;
+  border-bottom: 2px solid $main-blue;
+}
+
+
+
+
+@media (max-width:700px) {
+  .about-story {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+  .jammy {
+    grid-column: 1 / -1;
+    grid-row: 3;
+    justify-self: center;
+  }
+  .hula {
+    grid-column: 1 / -1;
+    grid-row: 4;
+    justify-self: center;
+  }
+  .contact-info {
+    grid-column: 1 / -1;
+  }
+}
+
+
+
+
+
 
 
 
