@@ -20,7 +20,10 @@
 
   </head>
 
-  <body>
+  <body id="work-page">
+    
+    
+     
       
 
     <header>    
@@ -34,8 +37,7 @@
 
         <ul>
           <li><a href="#" id="work" class="active">work</a></li>
-          <li><a href="about.html" id="about">about / contact</a></li>          
-          
+          <li><a href="about.html" id="about">about / contact</a></li>        
         </ul>
         
       </nav>
@@ -47,30 +49,79 @@
 
     <main>
 
-      
+      <div class="single-column-grid">
+
+        <div class="recent-work-wrap">
+          <p id="recent-work-1">RECENT</p>
+          <p id="recent-work-2">WORK</p>
+        </div>
         
-        <section class="grid-6 all-work">
-            
-          <h2>Jackie Garland Photography</h2>
+        <section class="all-work">
           
-          <p><a href="#"><img class="work-intro-img" src="img/portfolio_images/jgarland/jgarland_intro.png" alt=""></a></p>
+          <h1>My Work</h1>  
 
-          <h2>Instock Supplements</h2>
+          <div class="work-block" id="jgarland">
+            <p><a href="/clients/jgarland.html"><img class="work-intro-img" src="img/portfolio_images/jgarland/jgarland_intro.png" alt=""></a></p>
+            <h2><a href="/clients/jgarland.html">Jackie Garland Photography</a></h2>
+            <div class="work-info-grid">
+                <p class="work-desc">My client on this project wanted a clean site to show off her most recent
+                  photography work.  I designed a single page site with additional pages for each album.
+                  Once inside an album, I incorporated a third-party slider for easy viewing of each image.
+                </p>
+                <ul>
+                  <li>html5 / css3 / SASS</li>
+                  <li>css grid</li>
+                </ul>
+            </div>
+          </div>  
           
-          <p><a href="#"><img class="work-intro-img" src="img/portfolio_images/instock/instock_intro.png" alt=""></a></p>
-
-          <h2>HMS Nutrition</h2>
+          <div class="work-block" id="instock">
+            <p><a href="https://instocksupplements.com/"><img class="work-intro-img" src="img/portfolio_images/instock/instock_intro.png" alt=""></a></p>
+            <h2><a href="https://instocksupplements.com/">Instock Supplements</a></h2>
+            <div class="work-info-grid">
+                <p class="work-desc">This site started with a client starting a new business and needing an online catalog
+                  for their products.  Possibly wanting to sell from the site in the future I set up a Wordpress site and installed
+                  WooCommerce.  I set it up in catalog mode as no payments would be necessary at the time. 
+                </p>
+                <ul>
+                  <li>wordpress</li>
+                  <li>html5 / css3</li>
+                </ul>
+            </div>
+          </div>
           
-          <p><a href="#"><img class="work-intro-img" src="img/portfolio_images/hms/hms_intro.jpg" alt=""></a></p>
-
-          <h2>CSSIAV</h2>
+          <div class="work-block" id="hms">
+            <p><a href="https://hmsnutrition.com/"><img class="work-intro-img" src="img/portfolio_images/hms/hms_intro.jpg" alt=""></a></p>
+            <h2><a href="https://hmsnutrition.com/">HMS Nutrition</a></h2>
+            <div class="work-info-grid">
+                <p class="work-desc">HMS Nutrition was a new company needing a web presence and a way to sell products.
+                  Using a highly customized Wordpress theme and WooCommerce I was able to make it easy for the client
+                  to collect payment and sell their products.  
+                </p>
+                <ul>
+                  <li>wordpress</li>
+                  <li>html5 / css3</li>
+                  <li>ecommerce</li>
+                </ul>
+            </div>
+          </div>
           
-          <p><a href="#"><img class="work-intro-img" src="img/portfolio_images/cssiav/cssiav_intro.png" alt=""></a></p>
-          
+          <div class="work-block" id="cssiav">
+            <p><a href="http://tkennedydesigns.com/demo/cssiav/"><img class="work-intro-img" src="img/portfolio_images/cssiav/cssiav_intro.png" alt=""></a></p>       
+            <h2><a href="http://tkennedydesigns.com/demo/cssiav/">CSSIAV</a></h2> 
+            <div class="work-info-grid">
+                <p class="work-desc">This site was a fully fuctional mock-up for a potential client.
+                </p>
+                <ul>
+                  <li>html5 / css3</li>
+                  <li>wordpress</li>
+                </ul>
+            </div>
+          </div>
     
         </section>
 
-      
+      </div>
 
     </main>
 
@@ -78,11 +129,19 @@
 
     <footer>
 
-      <ul>
-        <li><a href="" id="fb-color">Facebook</a></li>
-        <li><a href="" id="twit-color">Twitter</a></li>
-        <li><a href="" id="email-color">Email</a></li>   
-      </ul>
+        <div class="bottom-nav">
+            <a href="#" class="foot-work">work</a>
+            <a href="#" class="foot-about">about / contact</a>
+            <a href="#" id="twit-color" class="foot-twit">twitter</a>
+            <a href="#" id="email-color" class="foot-email">email</a>
+          </div> 
+     
+         <!-- <ul>
+             
+             <li><a href="" id="twit-color">Twitter</a></li>
+             <li><a href="" id="email-color">Email</a></li>
+             
+         </ul> -->
     
     </footer>
   
