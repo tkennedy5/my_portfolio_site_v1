@@ -447,23 +447,32 @@ ALL WORK PAGE
 
 #recent-work-1 {
   position: fixed;
-  top: 40%;
-  left: 21%;
+  top: 55%;
+  left: 28%;
   z-index: -1;
-  font-size: 150px;
-  transform: rotate(-90deg);
+  font-size: 80px;
+  transform: rotate(90deg);
 }
 
 #recent-work-2 {
   position: fixed;
   top: 65%;
-  right: 24%;
+  right: 29%;
   z-index: -1;
-  font-size: 150px;
-  transform: rotate(90deg);
+  font-size: 80px;
+  transform: rotate(-90deg);
 }
 
-@media (max-width: 1320px) {
+@media (max-width: 900px) {
+  #recent-work-1 {
+    left: 15%;
+  }
+  #recent-work-2 {
+    right: 20%;
+  }
+}
+
+@media (max-width: 575px) {
   #recent-work-1 {
     left: 5%;
   }
@@ -472,39 +481,21 @@ ALL WORK PAGE
   }
 }
 
-@media (max-width: 888px) {
+@media (max-width: 440px) {
   #recent-work-1 {
-    left: -15%;
+    left: 2%;
   }
   #recent-work-2 {
-    right: -8%;
+    right: 5%;
   }
 }
 
-@media (max-width: 575px) {
+@media (max-width: 365px) {
   #recent-work-1 {
-    left: -35%;
+    left: -17%;
   }
   #recent-work-2 {
-    right: -25%;
-  }
-}
-
-@media (max-width: 420px) {
-  #recent-work-1 {
-    left: -50%;
-  }
-  #recent-work-2 {
-    right: -40%;
-  }
-}
-
-@media (max-width: 330px) {
-  #recent-work-1 {
-    display: none;
-  }
-  #recent-work-2 {
-    display: none;
+    right: -10%;
   }
 }
 
