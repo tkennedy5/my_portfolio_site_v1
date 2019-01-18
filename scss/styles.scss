@@ -100,7 +100,7 @@ h3 {
 
 .grid-6 {
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 15px;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: auto;
   // padding: 0 20px;
@@ -149,7 +149,7 @@ header {
     font-weight: 600;
     font-size: 1.3em;
     a {
-      color: $black;
+      color: $mid-black;
       border-bottom: 2px solid $main-blue;
       transition: border-bottom .1s;
       &:hover {
@@ -169,7 +169,7 @@ header {
     font-weight: 600;
     font-size: 1.3em;
     a {
-      color: $black;
+      color: $mid-black;
       border-bottom: 2px solid $main-blue;
       transition: border-bottom .1s;
       &:hover {
@@ -616,28 +616,33 @@ ABOUT
   position: relative;
 }
 .hula {
-  grid-column: 1 / span 3;
+  grid-column: 4 / -1;
   grid-row: 3;
   position: relative;
 }
 
+.tk-about {
+  grid-column: 1 / span 3;
+  grid-row: 3;
+  align-self: start;
+  justify-self: start;
+}
+
 .contact-info {
   width: 100%;
-  padding: 30px;
-  background: $main-blue;
-  grid-column: 4 / span 3;
-  justify-self: center;
+  // background: $main-blue;
+  grid-column: 1 / span 3;
   h2 {
-    margin: 20px 0;
-    color: $white-soft;
+    margin: 10px 0;
+    color: $mid-black;
   }
   p {
-    color: $white-soft;
+    color: $mid-black;
     a {
-      color: $white-soft;
-      border-bottom: 2px solid $main-blue-darker;
+      color: $mid-black;
+      border-bottom: 2px solid $main-blue-dark;
       &:hover {
-        color: $main-blue-darker;
+        color: $main-blue;
         border-bottom: 4px solid $main-blue-darker;
       }
     }
@@ -666,24 +671,23 @@ ABOUT
   }
   .jammy {
     grid-column: 1 / -1;
-    grid-row: 3;
+    grid-row: 4;
     justify-self: center;
   }
   .hula {
     grid-column: 1 / -1;
-    grid-row: 4;
+    grid-row: 5;
     justify-self: center;
   }
-  .contact-info {
-    margin-top: 30px;
+  .tk-about {
     grid-column: 1 / -1;
-    h2 {
-      font-size: 22px;
-    }  
-    p {
-      font-size: 14px;
+    grid-row: 3;
+    justify-self: center;
+    img {
+      max-width: 100%;
     }
   }
+ 
 }
 
 

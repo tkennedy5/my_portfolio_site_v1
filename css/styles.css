@@ -34,7 +34,7 @@ p {
 
 .grid-6 {
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 15px;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: auto;
   max-width: 900px;
@@ -69,7 +69,7 @@ header {
     font-weight: 600;
     font-size: 1.3em; }
     .logo-homepage h1 a {
-      color: #2e2e2e;
+      color: #444444;
       border-bottom: 2px solid #1064e0;
       transition: border-bottom .1s; }
       .logo-homepage h1 a:hover {
@@ -84,7 +84,7 @@ header {
     font-weight: 600;
     font-size: 1.3em; }
     .logo h1 a {
-      color: #2e2e2e;
+      color: #444444;
       border-bottom: 2px solid #1064e0;
       transition: border-bottom .1s; }
       .logo h1 a:hover {
@@ -368,26 +368,29 @@ ABOUT
   position: relative; }
 
 .hula {
-  grid-column: 1 / span 3;
+  grid-column: 4 / -1;
   grid-row: 3;
   position: relative; }
 
+.tk-about {
+  grid-column: 1 / span 3;
+  grid-row: 3;
+  align-self: start;
+  justify-self: start; }
+
 .contact-info {
   width: 100%;
-  padding: 30px;
-  background: #1064e0;
-  grid-column: 4 / span 3;
-  justify-self: center; }
+  grid-column: 1 / span 3; }
   .contact-info h2 {
-    margin: 20px 0;
-    color: #e0e0e0; }
+    margin: 10px 0;
+    color: #444444; }
   .contact-info p {
-    color: #e0e0e0; }
+    color: #444444; }
     .contact-info p a {
-      color: #e0e0e0;
-      border-bottom: 2px solid #09397f; }
+      color: #444444;
+      border-bottom: 2px solid #0c4dad; }
       .contact-info p a:hover {
-        color: #09397f;
+        color: #1064e0;
         border-bottom: 4px solid #09397f; }
 
 .dog-name {
@@ -406,21 +409,20 @@ ABOUT
 
   .jammy {
     grid-column: 1 / -1;
-    grid-row: 3;
+    grid-row: 4;
     justify-self: center; }
 
   .hula {
     grid-column: 1 / -1;
-    grid-row: 4;
+    grid-row: 5;
     justify-self: center; }
 
-  .contact-info {
-    margin-top: 30px;
-    grid-column: 1 / -1; }
-    .contact-info h2 {
-      font-size: 22px; }
-    .contact-info p {
-      font-size: 14px; } }
+  .tk-about {
+    grid-column: 1 / -1;
+    grid-row: 3;
+    justify-self: center; }
+    .tk-about img {
+      max-width: 100%; } }
 /**********************************************************
 FOOTER
 **********************************************************/
