@@ -115,7 +115,7 @@ nav {
         font-size: 14px; }
         nav ul li a:hover {
           color: #9e9e9e;
-          border-bottom: 2px solid #1064e0; }
+          border-bottom: 1px solid #1064e0; }
 
 .active {
   color: #9e9e9e; }
@@ -228,7 +228,7 @@ PROJECT CARDS
     box-shadow: none;
     transition: box-shadow .3s, color .3s; }
     .view-more a:hover {
-      color: #09397f;
+      color: #e0e0e0;
       box-shadow: 3px 3px 1px 0px #0c4dad;
       transition: box-shadow .3s, color .3s; }
 
@@ -237,22 +237,23 @@ ALL WORK PAGE
 **********************************************************/
 .all-work {
   z-index: 1;
-  background: rgba(255, 255, 255, 0.9);
+  background: white;
   grid-column: 2 / 3; }
-  .all-work h1 {
+  .all-work h2 {
     margin-bottom: 50px;
     font-size: 1.4em; }
-  .all-work h2 {
+  .all-work h3 {
     grid-column: 1 / -1;
     margin-bottom: 30px;
     font-weight: 600;
     font-size: 1.1em;
     color: #444444; }
-    .all-work h2 a {
+    .all-work h3 a {
       color: #444444;
-      border-bottom: 1px solid #1064e0; }
-      .all-work h2 a:hover {
-        color: #0c4dad; }
+      border-bottom: 2px solid #1064e0; }
+      .all-work h3 a:hover {
+        color: #0c4dad;
+        border-bottom: 4px solid #1064e0; }
   .all-work .work-desc {
     grid-column: 1 / span 1; }
     @media (max-width: 700px) {
@@ -274,18 +275,13 @@ ALL WORK PAGE
     grid-column: 1 / -1; }
 
 @media (min-width: 767px) {
-  .all-work h1 {
+  .all-work h2 {
     font-size: 1.7em; }
 
-  .all-work h2 {
+  .all-work h3 {
     font-size: 1.3em; } }
 .work-intro-img {
-  padding-bottom: 5px;
-  background: #fff;
-  border-bottom: 10px solid #fff;
-  transition: border-bottom .4s; }
-  .work-intro-img:hover {
-    border-bottom: 10px solid #1064e0; }
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.18); }
 
 .work-block {
   margin-bottom: 100px;
@@ -298,12 +294,12 @@ ABOUT
 .about {
   grid-column: 2 / 3;
   margin-bottom: 75px; }
-  .about h1 {
+  .about h2 {
     grid-column: 1 / -1;
     font-size: 1.4em; }
 
 @media (min-width: 767px) {
-  .about h1 {
+  .about h2 {
     font-size: 1.7em; } }
 .about-story {
   grid-column: 1 / span 3;
@@ -332,13 +328,14 @@ ABOUT
     margin: 10px 0;
     color: #444444; }
   .contact-info p {
-    color: #444444; }
+    color: #444444;
+    padding-bottom: 50px; }
     .contact-info p a {
       color: #444444;
-      border-bottom: 2px solid #0c4dad; }
+      border-bottom: 2px solid #1064e0; }
       .contact-info p a:hover {
         color: #1064e0;
-        border-bottom: 4px solid #09397f; }
+        border-bottom: 4px solid #1064e0; }
 
 .dog-name {
   position: absolute;
