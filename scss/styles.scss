@@ -6,9 +6,9 @@ $bg-black: #363636;
 $main-blue: rgb(16, 100, 224);
 $main-blue-dark: rgb(12, 77, 173);
 $main-blue-darker: rgb(9, 57, 127);
-$nav-links: rgb(158, 158, 158);
-$nav-links-hover: rgb(71, 71, 71);
-$nav-links-active: rgb(71, 71, 71);
+$nav-links: rgb(71, 71, 71);
+$nav-links-hover: rgb(158, 158, 158);
+$nav-links-active: rgb(158, 158, 158);
 
 
 $fb-color: rgb(109, 132, 180);
@@ -211,6 +211,7 @@ nav {
         font-size: 14px;
         &:hover {
         color: $nav-links-hover;
+        border-bottom: 2px solid $main-blue;
         // border-bottom: 1px solid $main-blue;
         }
       }   
@@ -246,19 +247,19 @@ nav {
 }
 
 
-@media (min-width: 900px) {
- nav li a::after {
-    content:'';
-    display: block;
-    width: 0;
-    height: 1px;
-    background: $main-blue;
-    transition: width .3s;
-  }
-  :hover::after {
-    width: 100%;
-  }
-}
+// @media (min-width: 900px) {
+//  nav li a::after {
+//     content:'';
+//     display: block;
+//     width: 0;
+//     height: 1px;
+//     background: $main-blue;
+//     transition: width .3s;
+//   }
+//   :hover::after {
+//     width: 100%;
+//   }
+// }
 
 
 
