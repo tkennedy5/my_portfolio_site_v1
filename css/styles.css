@@ -237,56 +237,60 @@ ALL WORK PAGE
 **********************************************************/
 .all-work {
   z-index: 1;
-  background: white;
   grid-column: 2 / 3; }
   .all-work h2 {
     margin-bottom: 50px;
     font-size: 1.4em; }
-  .all-work h3 {
-    grid-column: 1 / -1;
-    margin-bottom: 30px;
-    font-weight: 600;
-    font-size: 1.1em;
-    color: #444444; }
-    .all-work h3 a {
-      color: #444444;
-      border-bottom: 2px solid #1064e0; }
-      .all-work h3 a:hover {
-        color: #0c4dad;
-        border-bottom: 4px solid #1064e0; }
-  .all-work .work-desc {
-    grid-column: 1 / span 1; }
-    @media (max-width: 700px) {
-      .all-work .work-desc {
-        grid-column: 1 / -1; } }
-  .all-work ul {
-    grid-column: 2 / 3;
-    padding: 0 0 0 10px;
-    border-left: 1px solid #e0e0e0; }
-    @media (max-width: 700px) {
-      .all-work ul {
-        grid-column: 1 / -1; } }
-    .all-work ul li {
-      font-size: 14px;
-      text-transform: uppercase; }
-  .all-work p {
-    grid-column: 1 / -1; }
-  .all-work .work-description {
-    grid-column: 1 / -1; }
 
 @media (min-width: 767px) {
   .all-work h2 {
-    font-size: 1.7em; }
-
-  .all-work h3 {
-    font-size: 1.3em; } }
-.work-intro-img {
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.18); }
-
+    font-size: 1.7em; } }
 .work-block {
   margin-bottom: 100px;
   padding-bottom: 50px;
   border-bottom: 1px solid #e0e0e0; }
+  .work-block img {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.18); }
+  .work-block h3 {
+    grid-column: 1 / -1;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 1.1em;
+    color: #444444; }
+    .work-block h3 a {
+      color: #444444;
+      border-bottom: 2px solid #1064e0; }
+      .work-block h3 a:hover {
+        color: #0c4dad;
+        border-bottom: 4px solid #1064e0; }
+  .work-block .work-desc {
+    grid-column: 1 / span 1; }
+    @media (max-width: 700px) {
+      .work-block .work-desc {
+        grid-column: 1 / -1; } }
+  .work-block ul {
+    grid-column: 2 / 3;
+    padding: 0 0 0 10px;
+    border-left: 1px solid #e0e0e0; }
+    @media (max-width: 700px) {
+      .work-block ul {
+        grid-column: 1 / -1; } }
+    .work-block ul li {
+      font-size: 14px;
+      text-transform: uppercase; }
+  .work-block p {
+    grid-column: 1 / -1; }
+  .work-block .work-description {
+    grid-column: 1 / -1; }
+
+@media (min-width: 767px) {
+  .work-block h3 {
+    font-size: 1.3em; } }
+.work-image {
+  border-bottom: 10px solid #fff; }
+  .work-image:hover {
+    border-bottom: 10px solid #1064e0; }
 
 /**********************************************************
 ABOUT
