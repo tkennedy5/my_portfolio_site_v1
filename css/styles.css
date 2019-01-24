@@ -288,7 +288,8 @@ ALL WORK PAGE
   .work-block h3 {
     font-size: 1.3em; } }
 .work-image {
-  border-bottom: 10px solid #fff; }
+  border-bottom: 10px solid #fff;
+  transition: border-bottom .4s; }
   .work-image:hover {
     border-bottom: 10px solid #1064e0; }
 
@@ -320,6 +321,7 @@ ABOUT
   position: relative; }
 
 .tk-about {
+  background: #1064e0;
   grid-column: 1 / span 3;
   grid-row: 3;
   align-self: start;

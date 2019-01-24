@@ -516,6 +516,7 @@ ALL WORK PAGE
 
 .work-image {
   border-bottom: 10px solid #fff;
+  transition: border-bottom .4s;
   &:hover {
     border-bottom: 10px solid $main-blue;
   }
@@ -563,6 +564,7 @@ ABOUT
 }
 
 .tk-about {
+  background: $main-blue;
   grid-column: 1 / span 3;
   grid-row: 3;
   align-self: start;
