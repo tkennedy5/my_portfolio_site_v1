@@ -19,7 +19,7 @@ video {
   max-width: 100%; }
 
 p {
-  font-size: 1rem;
+  font-size: 16px;
   color: #444444; }
 
 /**********************************************************
@@ -240,8 +240,9 @@ PROJECT CARDS
 .project-title {
   padding: 5px 0;
   margin-right: 20px;
-  font-size: 1em;
-  font-weight: 400; }
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase; }
   .project-title a {
     color: #444444;
     transition: color .3s; }
@@ -292,9 +293,9 @@ ALL WORK PAGE
     grid-column: 1 / -1;
     margin-bottom: 30px;
     margin-top: 10px;
-    font-weight: 700;
+    font-weight: 600;
     text-transform: uppercase;
-    font-size: 1.1em;
+    font-size: 18px;
     color: #444444; }
     .work-block h3 a {
       color: #444444;
@@ -325,7 +326,7 @@ ALL WORK PAGE
 
 @media (min-width: 767px) {
   .work-block h3 {
-    font-size: 1.3em; } }
+    font-size: 20px; } }
 .work-image {
   border-bottom: 10px solid #fff;
   transition: border-bottom .4s; }

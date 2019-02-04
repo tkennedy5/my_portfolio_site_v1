@@ -49,7 +49,7 @@ video {
 // TYPOGRAPHY
 
 p {
-  font-size: 1rem;
+  font-size: 16px;
   color: $mid-black;
 }
 
@@ -436,8 +436,9 @@ PROJECT CARDS
 .project-title {
   padding: 5px 0;
   margin-right: 20px;
-  font-size: 1em;
-  font-weight: 400;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
   a {
     color: $mid-black;
     transition: color .3s;
@@ -524,9 +525,9 @@ ALL WORK PAGE
     grid-column: 1 / -1;
     margin-bottom: 30px;
     margin-top: 10px;
-    font-weight: 700;
+    font-weight: 600;
     text-transform: uppercase;
-    font-size: 1.1em;
+    font-size: 18px;
     color: $mid-black;
     // margin: 0 0 2rem;
     a {
@@ -567,7 +568,7 @@ ALL WORK PAGE
 
 @media (min-width: 767px) {
   .work-block h3 {
-    font-size: 1.3em;
+    font-size: 20px;
   }
 }
 
