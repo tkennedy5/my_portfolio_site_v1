@@ -427,6 +427,9 @@ PROJECT CARDS
   &:hover {
     border-bottom: 10px solid $main-blue;
   }
+  img {
+    object-fit: fill;
+  }
 }
 
 
