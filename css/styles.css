@@ -71,7 +71,7 @@ header {
     .logo-homepage h1 a {
       color: #444444;
       border-bottom: 2px solid #1064e0;
-      transition: border-bottom .1s; }
+      transition: border-bottom 0.1s; }
       .logo-homepage h1 a:hover {
         border-bottom: 4px solid #1064e0; }
 
@@ -86,7 +86,7 @@ header {
     .logo h1 a {
       color: #444444;
       border-bottom: 2px solid #1064e0;
-      transition: border-bottom .1s; }
+      transition: border-bottom 0.1s; }
       .logo h1 a:hover {
         border-bottom: 4px solid #1064e0; }
   .logo p {
@@ -110,7 +110,7 @@ nav {
       nav ul li a {
         cursor: pointer;
         color: #474747;
-        transition: color .3s;
+        transition: color 0.3s;
         font-size: 14px; }
         nav ul li a:hover {
           color: #9e9e9e;
@@ -233,7 +233,7 @@ PROJECT CARDS
   padding: 10px;
   background: #fff;
   border-bottom: 10px solid #f0f0f0;
-  transition: border-bottom .4s; }
+  transition: border-bottom 0.4s; }
   .card:hover {
     border-bottom: 10px solid #1064e0; }
   .card img {
@@ -247,7 +247,7 @@ PROJECT CARDS
   text-transform: uppercase; }
   .project-title a {
     color: #444444;
-    transition: color .3s; }
+    transition: color 0.3s; }
     .project-title a:hover {
       color: #1064e0; }
 
@@ -267,7 +267,7 @@ PROJECT CARDS
     font-weight: 600;
     padding: 10px 10px;
     box-shadow: none;
-    transition: box-shadow .3s, color .3s; }
+    transition: box-shadow 0.3s, color 0.3s; }
     .view-more a:hover {
       color: #e0e0e0;
       box-shadow: 3px 3px 1px 0px #0c4dad; }
@@ -301,7 +301,7 @@ ALL WORK PAGE
     color: #444444; }
     .work-block h3 a {
       color: #444444;
-      transition: color .3s;
+      transition: color 0.3s;
       border-bottom: 2px solid #1064e0; }
       .work-block h3 a:hover {
         color: #0c4dad;
@@ -331,7 +331,7 @@ ALL WORK PAGE
     font-size: 20px; } }
 .work-image {
   border-bottom: 10px solid #fff;
-  transition: border-bottom .4s; }
+  transition: border-bottom 0.4s; }
   .work-image:hover {
     border-bottom: 10px solid #1064e0; }
 
@@ -353,7 +353,7 @@ ALL WORK PAGE
     margin-bottom: 10px; }
     .side-projects-wrap .side-project h4 a {
       color: #444444;
-      transition: color .3s; }
+      transition: color 0.3s; }
       .side-projects-wrap .side-project h4 a:hover {
         color: #1064e0; }
 
@@ -449,6 +449,31 @@ ABOUT
     justify-self: center; }
     .tk-about img {
       max-width: 100%; } }
+/**********************************************************
+MY STUFF
+**********************************************************/
+.my-stuff {
+  grid-column: 2 / 3;
+  margin: 20px 0 60px 0; }
+  .my-stuff h1 {
+    border-bottom: 5px solid #1064e0;
+    padding: 10px;
+    margin-bottom: 40px; }
+  .my-stuff p {
+    line-height: 1.9;
+    margin-bottom: 15px; }
+  .my-stuff h3 {
+    margin: 40px 0 20px 0; }
+  .my-stuff ul li {
+    list-style: disc;
+    line-height: 1.8; }
+  .my-stuff ul a {
+    border-bottom: 2px solid #1064e0;
+    color: #444444; }
+  .my-stuff h4 {
+    text-indent: 10px;
+    font-weight: 600; }
+
 /**********************************************************
 FOOTER
 **********************************************************/
