@@ -25,6 +25,22 @@ GLOBAL
   list-style: none;
   text-decoration: none;
   margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 17px;
+}
+
+@media (max-width: 900px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media (max-width: 400px) {
+  html {
+    font-size: 13px;
+  }
 }
 
 body {
@@ -44,17 +60,7 @@ video {
 // TYPOGRAPHY
 
 p {
-  font-size: 16px;
   color: $mid-black;
-}
-
-h1 {
-}
-
-h2 {
-}
-
-h3 {
 }
 
 @media (min-width: 500px) {
@@ -124,7 +130,7 @@ header {
   justify-self: start;
   margin-left: 40px;
   p {
-    font-size: 13px;
+    font-size: 0.9em;
     padding-top: 2px;
   }
   h1 {
@@ -159,7 +165,7 @@ header {
     }
   }
   p {
-    font-size: 13px;
+    font-size: 0.9em;
     padding-top: 2px;
   }
 }
@@ -184,7 +190,7 @@ nav {
         cursor: pointer;
         color: $nav-links;
         transition: color 0.3s;
-        font-size: 14px;
+        font-size: 0.9em;
         &:hover {
           color: $nav-links-hover;
           border-bottom: 1px solid $main-blue;
@@ -245,23 +251,7 @@ INTRO BLOCK
   grid-gap: 1em;
   padding: 10px 0;
   h2 {
-    font-size: 1.6em;
-  }
-}
-
-@media (min-width: 500px) {
-  .intro-block h2 {
-    font-size: 1.8em;
-  }
-}
-@media (min-width: 767px) {
-  .intro-block h2 {
-    font-size: 2em;
-  }
-}
-@media (min-width: 1000px) {
-  .intro-block h2 {
-    font-size: 2.2em;
+    font-size: 1.9em;
   }
 }
 
@@ -389,9 +379,9 @@ PROJECT CARDS
 }
 
 .project-title {
-  padding: 5px 0;
-  margin-right: 20px;
-  font-size: 16px;
+  /// padding: 5px 0;
+  // margin-right: 20px;
+  font-size: 0.9em;
   font-weight: 600;
   text-transform: uppercase;
   a {
@@ -406,10 +396,11 @@ PROJECT CARDS
 .view-more {
   display: grid;
   grid-column: 1 / -1;
-  width: 95%;
+  // width: 95%;
   margin-top: 15px;
-  justify-self: center;
-  justify-items: center;
+  text-align: center;
+  // justify-self: center;
+  // justify-items: center;
   p {
     padding: 10px 0;
   }
@@ -418,12 +409,13 @@ PROJECT CARDS
     border-radius: 2px;
     color: $white;
     font-weight: 600;
+    font-size: 1em;
     padding: 10px 10px;
     box-shadow: none;
     transition: box-shadow 0.3s, color 0.3s;
     &:hover {
       color: $white-soft;
-      box-shadow: 3px 3px 1px 0px $main-blue-dark;
+      box-shadow: 3px 5px 1px 0px $main-blue-dark;
       // transition: box-shadow .3s, color .3s;
     }
   }
@@ -468,7 +460,7 @@ ALL WORK PAGE
     margin-top: 10px;
     font-weight: 600;
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 1em;
     color: $mid-black;
     // margin: 0 0 2rem;
     a {
@@ -633,7 +625,7 @@ ABOUT
   left: 16px;
   color: $white;
   font-weight: 700;
-  font-size: 1.6rem;
+  font-size: 1.6em;
   transform: rotate(-20deg);
 }
 
@@ -707,59 +699,28 @@ FOOTER
 
 footer {
   background: $bg-black;
-  height: 100px;
   display: grid;
   grid-template-columns: 1fr;
-  justify-items: end;
+  justify-items: center;
+  align-items: center;
+  height: 8rem;
   ul {
-    grid-column: 2 / span 1;
-    margin-right: 40px;
+    display: flex;
+    flex-wrap: wrap;
   }
   li {
-    display: inline-block;
+    // display: inline-block;
     padding: 10px;
-  }
-}
-
-.bottom-nav {
-  position: relative;
-  width: 100%;
-  a {
-    color: $white-soft;
-    border-bottom: 1px solid $white;
-    &:hover {
-      color: $main-blue;
-      border-bottom: 3px solid $white;
+    font-size: 0.9em;
+    a {
+      color: $white-soft;
+      border-bottom: 1px solid $white;
+      &:hover {
+        color: $main-blue;
+        border-bottom: 3px solid $white;
+      }
     }
   }
-}
-
-.foot-work {
-  padding: 3px 0;
-  position: absolute;
-  top: 40px;
-  left: 5px;
-  transform: rotate(-90deg);
-}
-
-.foot-about {
-  padding: 3px 0;
-  position: absolute;
-  left: 45px;
-}
-
-.foot-twit {
-  padding: 3px 0;
-  position: absolute;
-  right: 45px;
-}
-
-.foot-email {
-  padding: 3px 0;
-  position: absolute;
-  top: 43px;
-  right: 5px;
-  transform: rotate(90deg);
 }
 
 #twit-color {
