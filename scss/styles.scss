@@ -251,7 +251,9 @@ INTRO BLOCK
   grid-gap: 1em;
   padding: 10px 0;
   h2 {
-    font-size: 1.9em;
+    font-size: 2.4em;
+    font-family: "Lora", serif;
+    font-weight: 600;
   }
 }
 
@@ -513,7 +515,7 @@ ALL WORK PAGE
   }
 }
 
-.side-projects-wrap {
+.current-projects-wrap {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
@@ -525,12 +527,16 @@ ALL WORK PAGE
     text-align: center;
     padding: 10px;
   }
-  .side-project {
+  .current-project-intro {
+    grid-column: 1 / -1;
+  }
+  .current-project {
+    grid-column: 1 / -1;
     h4 {
       display: inline-block;
       text-transform: uppercase;
       border-bottom: 2px solid $main-blue;
-      margin-bottom: 10px;
+      margin-bottom: 20px;
       a {
         color: $mid-black;
         transition: color 0.3s;
@@ -542,8 +548,18 @@ ALL WORK PAGE
   }
 }
 
+.current-projects-teaser img {
+  float: left;
+}
+
+@media (max-width: 450px) {
+  .current-projects-teaser img {
+    float: none;
+  }
+}
+
 @media (max-width: 700px) {
-  .side-projects-wrap {
+  .current-projects-wrap {
     grid-template-columns: 1fr;
   }
 }
@@ -709,12 +725,12 @@ footer {
     flex-wrap: wrap;
   }
   li {
-    // display: inline-block;
     padding: 10px;
     font-size: 0.9em;
     a {
+      padding-bottom: 5px;
       color: $white-soft;
-      border-bottom: 1px solid $white;
+      // border-bottom: 1px solid $white;
       &:hover {
         color: $main-blue;
         border-bottom: 3px solid $white;
