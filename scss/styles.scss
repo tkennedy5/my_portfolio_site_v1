@@ -63,30 +63,14 @@ p {
   color: $mid-black;
 }
 
-@media (min-width: 500px) {
-}
-
-@media (min-width: 767px) {
-}
-
-@media (min-width: 1000px) {
-}
-
 /**********************************************************
  PAGE-GRIDS
 **********************************************************/
-
-// #homepage-grid {
-//   display: grid;
-//   grid-template-rows: 1fr 3fr 3fr 1fr;
-
-// }
 
 .single-column-grid {
   display: grid;
   grid-template-columns: minmax(1em, 1fr) minmax(200px, 1000px) minmax(1em, 1fr);
   grid-template-rows: auto;
-  // min-height: 100vh;
   margin-top: 50px;
 }
 
@@ -95,7 +79,6 @@ p {
   grid-gap: 15px;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: auto;
-  // padding: 0 20px;
   max-width: 900px;
   margin: 0 auto;
 }
@@ -112,9 +95,6 @@ HEADER
 
 header {
   border-top: 7px solid $main-blue;
-  // position: sticky;
-  // top: 0px;
-  // z-index: 1000;
   background: $white;
   display: grid;
   grid-gap: 10px;
@@ -176,8 +156,6 @@ nav {
   margin-right: 40px;
   margin-top: 6px;
   ul {
-    // display: grid;
-    // grid-auto-flow: column;
     display: flex;
     flex-wrap: wrap;
     padding-left: 0;
@@ -194,7 +172,6 @@ nav {
         &:hover {
           color: $nav-links-hover;
           border-bottom: 1px solid $main-blue;
-          // border-bottom: 1px solid $main-blue;
         }
       }
     }
@@ -205,19 +182,6 @@ nav {
   color: $nav-links-active;
 }
 
-// @media (min-width:767px) {
-//   .logo {
-//     grid-column: 1 /  span 2;
-//     justify-self: start;
-//     margin-left: 40px;
-//   }
-//   nav {
-//     grid-column: 3 / span 2;
-//     justify-self: end;
-//     margin-right: 40px;
-//   }
-// }
-
 @media (max-width: 550px) {
   .logo-homepage {
     grid-column: 1 / -1;
@@ -226,20 +190,6 @@ nav {
     grid-column: 1 / -1;
   }
 }
-
-// @media (min-width: 900px) {
-//  nav li a::after {
-//     content:'';
-//     display: block;
-//     width: 0;
-//     height: 1px;
-//     background: $main-blue;
-//     transition: width .3s;
-//   }
-//   :hover::after {
-//     width: 100%;
-//   }
-// }
 
 /**********************************************************
 INTRO BLOCK
@@ -381,8 +331,6 @@ PROJECT CARDS
 }
 
 .project-title {
-  /// padding: 5px 0;
-  // margin-right: 20px;
   font-size: 0.9em;
   font-weight: 600;
   text-transform: uppercase;
@@ -398,11 +346,8 @@ PROJECT CARDS
 .view-more {
   display: grid;
   grid-column: 1 / -1;
-  // width: 95%;
   margin-top: 15px;
   text-align: center;
-  // justify-self: center;
-  // justify-items: center;
   p {
     padding: 10px 0;
   }
@@ -418,15 +363,9 @@ PROJECT CARDS
     &:hover {
       color: $white-soft;
       box-shadow: 3px 5px 1px 0px $main-blue-dark;
-      // transition: box-shadow .3s, color .3s;
     }
   }
 }
-
-// .fillbox {
-//   max-width: 100%;
-//   background: blue;
-// }
 
 /**********************************************************
 ALL WORK PAGE
@@ -434,7 +373,6 @@ ALL WORK PAGE
 
 .all-work {
   z-index: 1;
-  // background: rgba(255, 255, 255, 1);
   grid-column: 2 / 3;
   h2 {
     margin-bottom: 50px;
@@ -464,7 +402,6 @@ ALL WORK PAGE
     text-transform: uppercase;
     font-size: 1em;
     color: $mid-black;
-    // margin: 0 0 2rem;
     a {
       color: $mid-black;
       transition: color 0.3s;
@@ -752,23 +689,3 @@ footer {
     color: $white-soft;
   }
 }
-
-/**********************************************************
-MEDIA QUERIES
-**********************************************************/
-
-/*changes navigation links to horizontal*/
-
-// @media (min-width:500px) {
-//   nav {
-//     margin-top: 0;
-//   }
-//   nav ul {
-//     display: grid;
-//     grid-auto-flow: column;
-
-//   }
-
-// }
-
-/*Adjusts intro on mobile*/
