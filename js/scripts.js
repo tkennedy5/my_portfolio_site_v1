@@ -1,3 +1,3 @@
-$( document ).ready(function() {
-  $(".intro").fadein("10s")
+document.addEventListener('DOMContentLoaded', function() {
+  $('.intro').fadein('10s');
 });
