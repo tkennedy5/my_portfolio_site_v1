@@ -10,6 +10,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <title>Work | Tim Kennedy Web</title>
+    <link rel="icon" type="image/png" href="https://res.cloudinary.com/dwp6wfkwf/image/upload/v1586960143/timkennedyweb-portfolio/tk_ghifkh.png">
     <meta name="description" content="Tim Kennedy is a Front-end Web Developer living in the St. Petersburg / Tampa, Fl area" />
     <link rel=”canonical” href=”http://timkennedyweb.com/work.html”>
 
@@ -39,21 +40,18 @@
   <body id="work-page">
     
     
-     
-      
-
-    <header>    
+    <header class="site-header">    
       
       <div class="logo">
-          <h1><a href="index.html">Tim Kennedy</a></h1>
-          <p>front-end developer</p>
+        <span class="hi">hi, my name is</span>
+        <h1 class="logo-name"><a href="index.html">Tim Kennedy</a></h1>
       </div>
                                         
       <nav class="main-nav"> 
 
         <ul>
           <li><a href="#" id="work" class="active">work</a></li>
-          <li><a href="about.html" id="about">about & contact</a></li>        
+          <li><a href="about.html" id="about">about / contact</a></li>        
         </ul>
         
       </nav>
@@ -61,19 +59,36 @@
     </header>
     
 
-    <main>
+    <div class="container container--wide">
 
-      <div class="single-column-grid">
+      <header class="page-header">
+        <h2 class="page-header-title">My Work</h2> 
+      </header> 
 
+      <main>
         
-        <section class="all-work">
+        <section class="all-work section">
           
-          <h2>My Work</h2>  
 
-          <div class="work-block" id="coastal">
-            <p class="work-image"><a href="http://timkennedyweb.com/dev/coastal/"><img src="https://res.cloudinary.com/dwp6wfkwf/image/upload/v1581112097/timkennedyweb-portfolio/coastal-1200x700_icqjpy.jpg" alt="coastal photo image"></a></p>
-            <h3><a href="http://timkennedyweb.com/dev/coastal/">Coastal Watersports</a></h3>
-            <div class="work-info-grid">
+          <div class="work-block section" id="gulfcoast">
+            <a href="http://gulfcoastbuilderstb.com/" ><img src="https://res.cloudinary.com/dwp6wfkwf/image/upload/q_auto/v1586546513/timkennedyweb-portfolio/gc-1200x700_zcmion.jpg" class="work-block-image" alt="gulfcoast"></a>
+            <h3 class="work-block-title"><a href="http://gulfcoastbuilderstb.com/">Gulf Coast Builders of Tampa Bay</a></h3>
+            <div class="work-block-grid">
+                <p class="work-desc">This a recent project I wrapped up from Design to Development for a new client
+                  needing a web presence for their new business.  This site turned out really nice and is very easy to navigate.
+                </p>
+                <ul>
+                  <li>html5 / css3 / SASS</li>
+                  <li>css grid</li>
+                  <li>javascript</li>
+                </ul>
+            </div>
+          </div>  
+
+          <div class="work-block section" id="coastal">
+            <a href="http://timkennedyweb.com/dev/coastal/"><img src="https://res.cloudinary.com/dwp6wfkwf/image/upload/q_auto/v1581112097/timkennedyweb-portfolio/coastal-1200x700_icqjpy.jpg" class="work-block-image" alt="coastal photo image"></a>
+            <h3 class="work-block-title"><a href="http://timkennedyweb.com/dev/coastal/">Coastal Watersports</a></h3>
+            <div class="work-block-grid">
                 <p class="work-desc">This is a design / development project I completed for a new client.  They
                   are getting into the watersports rental business and needed a new site. This one came out really nice
                   and was kept simple with some vibrant colors.
@@ -87,10 +102,10 @@
             </div>
           </div>  
 
-          <div class="work-block" id="jgarland">
-            <p class="work-image"><a href="http://jgarlandphoto.com/"><img src="https://res.cloudinary.com/dwp6wfkwf/image/upload/v1581112097/timkennedyweb-portfolio/jgarland-1200x700_fy0nmq.jpg" alt="jgarland photo image"></a></p>
-            <h3><a href="http://jgarlandphoto.com/">Jackie Garland Photography</a></h3>
-            <div class="work-info-grid">
+          <div class="work-block section" id="jgarland">
+            <a href="http://jgarlandphoto.com/"><img src="https://res.cloudinary.com/dwp6wfkwf/image/upload/q_auto/v1581112097/timkennedyweb-portfolio/jgarland-1200x700_fy0nmq.jpg" class="work-block-image" alt="jgarland photo image"></a>
+            <h3 class="work-block-title"><a href="http://jgarlandphoto.com/">Jackie Garland Photography</a></h3>
+            <div class="work-block-grid">
                 <p class="work-desc">My client on this project wanted a clean site to show off her most recent
                   photography work.  I designed a single page site with additional pages for each album.
                   Once inside an album, I incorporated a third-party slider for easy viewing of each image.
@@ -102,10 +117,10 @@
             </div>
           </div>  
 
-          <div class="work-block" id="outoftheblue">
-            <p class="work-image"><a href="https://outofthebluedesignstudio.com/"><img src="https://res.cloudinary.com/dwp6wfkwf/image/upload/v1581112084/timkennedyweb-portfolio/otb-1200x700_tgmlli.jpg" alt="out of the blue intro image"></a></p>       
-            <h3><a href="https://outofthebluedesignstudio.com/">Out Of The Blue Design Studio</a></h3> 
-            <div class="work-info-grid">
+          <div class="work-block section" id="outoftheblue">
+            <a href="https://outofthebluedesignstudio.com/"><img src="https://res.cloudinary.com/dwp6wfkwf/image/upload/q_auto/v1581112084/timkennedyweb-portfolio/otb-1200x700_tgmlli.jpg" class="work-block-image" alt="out of the blue intro image"></a>       
+            <h3 class="work-block-title"><a href="https://outofthebluedesignstudio.com/">Out Of The Blue Design Studio</a></h3> 
+            <div class="work-block-grid">
                 <p class="work-desc">This was a complete overhaul and update for this client.  We redesigned and built the site
                   to focus on his business and large inventory of products.  Mobile friendly and responsive pages were big upgrades
                   from the previous version.
@@ -117,10 +132,10 @@
             </div>
           </div>
           
-          <div class="work-block" id="instock">
-            <p class="work-image"><a href="https://instocksupplements.com/"><img src="https://res.cloudinary.com/dwp6wfkwf/image/upload/v1582225106/timkennedyweb-portfolio/instock-1200x700_lh9lj8.jpg" alt="instock intro image"></a></p>
-            <h3><a href="https://instocksupplements.com/">Instock Supplements</a></h3>
-            <div class="work-info-grid">
+          <div class="work-block section" id="instock">
+            <a href="https://instocksupplements.com/"><img src="https://res.cloudinary.com/dwp6wfkwf/image/upload/q_auto/v1582225106/timkennedyweb-portfolio/instock-1200x700_lh9lj8.jpg" class="work-block-image" alt="instock intro image"></a>
+            <h3 class="work-block-title"><a href="https://instocksupplements.com/">Instock Supplements</a></h3>
+            <div class="work-block-grid">
                 <p class="work-desc">This site started with a client starting a new business and needing an online catalog
                   for their products.  Possibly wanting to sell from the site in the future I set up a Wordpress site and installed
                   WooCommerce.  I set it up in catalog mode as no payments would be necessary at the time. 
@@ -132,10 +147,10 @@
             </div>
           </div>
           
-          <div class="work-block" id="hms">
-            <p class="work-image"><a href="https://hmsnutrition.com/"><img src="https://res.cloudinary.com/dwp6wfkwf/image/upload/v1581112097/timkennedyweb-portfolio/hms-1200x700_mmv4uo.jpg" alt="hms intro image"></a></p>
-            <h3><a href="https://hmsnutrition.com/">HMS Nutrition</a></h3>
-            <div class="work-info-grid">
+          <div class="work-block section" id="hms">
+            <a href="https://hmsnutrition.com/"><img src="https://res.cloudinary.com/dwp6wfkwf/image/upload/q_auto/v1581112097/timkennedyweb-portfolio/hms-1200x700_mmv4uo.jpg" class="work-block-image" alt="hms intro image"></a>
+            <h3 class="work-block-title"><a href="https://hmsnutrition.com/">HMS Nutrition</a></h3>
+            <div class="work-block-grid">
                 <p class="work-desc">HMS Nutrition was a new company needing a web presence and a way to sell products.
                   Using a highly customized Wordpress theme and WooCommerce I was able to make it easy for the client
                   to collect payment and sell their products.  
@@ -148,10 +163,10 @@
             </div>
           </div>
           
-          <div class="work-block" id="cssiav">
-            <p class="work-image"><a href="http://tkennedydesigns.com/demo/cssiav/"><img src="https://res.cloudinary.com/dwp6wfkwf/image/upload/v1581112097/timkennedyweb-portfolio/cssiav-1200x700_lqgsx0.jpg" alt="cssiav intro image"></a></p>       
-            <h3><a href="http://tkennedydesigns.com/demo/cssiav/">CSSIAV</a></h3> 
-            <div class="work-info-grid">
+          <div class="work-block section" id="cssiav">
+            <a href="http://tkennedydesigns.com/demo/cssiav/"><img src="https://res.cloudinary.com/dwp6wfkwf/image/upload/q_auto/v1581112097/timkennedyweb-portfolio/cssiav-1200x700_lqgsx0.jpg" class="work-block-image" alt="cssiav intro image"></a>      
+            <h3 class="work-block-title"><a href="http://tkennedydesigns.com/demo/cssiav/">CSSIAV</a></h3> 
+            <div class="work-block-grid">
                 <p class="work-desc">This site was a fully fuctional mock-up for a potential client.
                 </p>
                 <ul>
@@ -161,45 +176,24 @@
             </div>
           </div>
 
-          <div class="current-projects-wrap">
-            <h3>Current Projects</h3>
-            
-            <div class="current-project-intro">
+        </section>
 
-              <p>I am currently working through a Full Stack Javascript course to further enhance
-                my skillset as a developer.  In addition to that I love Wordpress, so I am constantly learning
-                the ins and outs of theme development.
-              </p><br>
-              <p>Check out some other projects I'm working on below...</p>
+        
+          <div class="other-projects-wrap section-prefooter">
 
-            </div>
+            <h3 class="section-title">Other Projects</h3>
             
-            <div class="current-project">
-              <h4><a href="http://timkennedyweb.com">This portfolio site</a></h4>
-              <p>This is my site which I designed to be minimalistic therefore allowing me to 
-                expand on it as needed.  I wanted the focus to be on my projects while being
-                easy to navigate.
+            <div class="other-project">
+              <h4>Shawn Messenger Glass Art</h4>
+              <p>This is a new client that came to me in need of a major update on their business
+                site.  Her site was outdated, not responsive, and very static.  I am wrapping it
+                up very soon and can't wait to get it on here.
               </p>
             </div>
 
-            <div class="current-project">
-              <h4><a href="#">Gulf Coast Builders of Tampa Bay</a></h4>
-              <div class="current-projects-teaser">
-                <img src="https://res.cloudinary.com/dwp6wfkwf/image/upload/v1580063855/timkennedyweb-portfolio/gulfcoast_logo_rdrvse.jpg" alt="">
-                <p>Gulf Coast Builders is a client of mine who needed a fresh web presence.  They offer
-                  a bunch of renovation and contracting services, so I am building them a site
-                  to showcase their services and 25 years of work.  This site will be live very soon and 
-                  loaded up here soon!
-                </p>
-              </div>
-            </div>
-
-            
-
           </div>
-    
-        </section>
-
+        
+        
       </div>
 
     </main>
@@ -208,15 +202,20 @@
 
     <footer>
 
-     
-       <ul>
-        <li><a href="/work.html" class="foot-work">work</a></li>
-        <li><a href="/about.html" class="foot-about">about & contact</a></li>
-        <li><a href="https://twitter.com" id="twit-color" class="foot-twit">twitter</a></li>
-        <li><a href="mailto:tim@timkennedyweb.com" id="email-color" class="foot-email">email</a></li>
-       </ul>
-     
+        <div class="site-footer">
+          <span class="foot-copy">timkennedyweb &copy; 2020</span>
+        </div>
+       
+       <!-- <a href="mailto:tim@timkennedyweb.com" id="email-color" class="foot-email">get in touch</a> -->
 
+       <!-- <div class="footer-mobile">
+         <ul>
+          <li><a href="work.html" class="foot-work">work</a></li>
+          <li><a href="about.html" class="foot-about">about</a></li>
+          <li><a href="mailto:tim@timkennedyweb.com">get in touch</a></li>
+        </ul>
+       </div> -->
+     
     </footer>
     
   
