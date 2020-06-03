@@ -11,7 +11,7 @@ PAGES
   BASE - BASE - BASE - BASE - BASE 
 --------------------------------------*/
 /*
- Colors / Typography root
+ Colors / Typography root ----------
 */
 :root {
   --black-dk: #242424;
@@ -40,7 +40,7 @@ PAGES
 }
 
 /*
-  Resets
+  Resets ----------
 */
 * {
   font-family: "Open Sans", sans-serif;
@@ -57,7 +57,7 @@ img {
 }
 
 /*
-  HTML / Body 
+  HTML / Body ----------
 */
 html {
   scroll-behavior: smooth;
@@ -70,7 +70,7 @@ body {
 }
 
 /* 
-  Responsive font sizing 
+  Responsive font sizing ----------
 */
 html {
   font-size: 17px;
@@ -92,7 +92,7 @@ html {
   }
 }
 /*
-  Headings
+  Headings ----------
 */
 h1,
 h2,
@@ -142,7 +142,7 @@ h6 {
 }
 
 /*
-  Links
+  Links ----------
 */
 a {
   color: var(--black);
@@ -151,19 +151,30 @@ a {
 }
 
 /*
-  Text
+  Text ----------
+*/
+/*
+  Paragraph text
 */
 p {
   color: var(--black-20);
   font-size: var(--baseFontSize);
   margin-bottom: 1.5rem;
 }
+p::-moz-selection {
+  background-color: var(--main-blue);
+  color: white;
+}
+p::selection {
+  background-color: var(--main-blue);
+  color: white;
+}
 
 /*-------------------------------------
   LAYOUT LAYOUT LAYOUT LAYOUT LAYOUT 
 --------------------------------------*/
 /*
-  Containers - generally affect horizontal spacing & centering
+  Containers - generally affect horizontal spacing & centering ----------
 */
 .page-wrap {
   margin: 0 auto;
@@ -191,7 +202,7 @@ p {
 }
 
 /*
-  Sections  - generally affect vertical spacing
+  Sections  - generally affect vertical spacing ----------
 */
 .section {
   margin-bottom: 3rem;
@@ -226,7 +237,7 @@ p {
 }
 
 /*
-  Page Headers
+  Page Headers ----------
 */
 .page-header {
   margin-bottom: 3rem;
@@ -245,7 +256,7 @@ p {
 }
 
 /*
-  Text Alignment
+  Text Alignment ----------
 */
 .txt-ctr {
   text-align: center;
@@ -260,7 +271,7 @@ p {
 }
 
 /*
-  Text Blocks
+  Text Blocks ----------
 */
 .txt-block {
   margin: 0 0 2rem;
@@ -271,7 +282,7 @@ p {
 }
 
 /*
-  Css Grids
+  Css Grids ----------
 */
 .grid-6 {
   display: grid;
@@ -286,36 +297,33 @@ p {
   COMPONENTS COMPONENTS COMPONENTS COMPONENTS COMPONENTS
 --------------------------------------*/
 /*
-  Animations
+  Animations ----------
 */
 /*
   Hero-Box Slide-in
 */
 .hero-box {
   -webkit-animation: 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both slide-in-left;
-  animation: 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both slide-in-left;
+          animation: 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both slide-in-left;
 }
 
 @-webkit-keyframes slide-in-left {
   0% {
-    -webkit-transform: translateX(-1000px);
     transform: translateX(-1000px);
     opacity: 0;
   }
   100% {
-    -webkit-transform: translateX(0);
     transform: translateX(0);
     opacity: 1;
   }
 }
+
 @keyframes slide-in-left {
   0% {
-    -webkit-transform: translateX(-1000px);
     transform: translateX(-1000px);
     opacity: 0;
   }
   100% {
-    -webkit-transform: translateX(0);
     transform: translateX(0);
     opacity: 1;
   }
@@ -325,29 +333,15 @@ p {
 */
 .hero-intro {
   -webkit-animation: 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.3s both slide-in-left;
-  animation: 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.3s both slide-in-left;
+          animation: 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.3s both slide-in-left;
 }
 
-@-webkit-keyframes slide-in-left {
-  0% {
-    -webkit-transform: translateX(-1000px);
-    transform: translateX(-1000px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
 @keyframes slide-in-left {
   0% {
-    -webkit-transform: translateX(-1000px);
     transform: translateX(-1000px);
     opacity: 0;
   }
   100% {
-    -webkit-transform: translateX(0);
     transform: translateX(0);
     opacity: 1;
   }
@@ -360,7 +354,7 @@ p {
   Site Header
 */
 .site-header {
-  background: rgba(255, 255, 255, 0.9);
+  background: var(--white);
   display: grid;
   gap: 10px;
   grid-template-columns: 1fr;
@@ -665,7 +659,7 @@ footer {
   position: absolute;
   top: 15px;
   left: 16px;
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--white);
   font-weight: 700;
   font-size: 1.6rem;
   transform: rotate(-20deg);
@@ -728,7 +722,7 @@ footer {
 }
 .my-stuff ul a {
   border-bottom: 2px solid var(--main-blue);
-  color: #444444;
+  color: var(--black-40);
 }
 .my-stuff h4 {
   text-indent: 10px;

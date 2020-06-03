@@ -13,24 +13,8 @@ PAGES
 --------------------------------------*/
 
 /*
- Colors / Typography root
+ Colors / Typography root ----------
 */
-$black: #2e2e2e;
-$mid-black: #444444;
-$white: rgba(255, 255, 255, 0.9);
-$white-soft: rgb(224, 224, 224);
-$bg-black: #363636;
-$main-blue: rgb(16, 100, 224);
-$main-blue-dark: rgb(12, 77, 173);
-$main-blue-darker: rgb(9, 57, 127);
-$nav-links: rgb(71, 71, 71);
-$nav-links-hover: rgb(158, 158, 158);
-$nav-links-active: rgb(158, 158, 158);
-
-$fb-color: rgb(109, 132, 180);
-$fb-color-dark: rgb(59, 89, 152);
-$twit-color: rgb(29, 161, 242);
-$email-color: rgb(255, 0, 0);
 
 :root {
   --black-dk: #242424;
@@ -61,7 +45,7 @@ $email-color: rgb(255, 0, 0);
 }
 
 /*
-  Resets
+  Resets ----------
 */
 * {
   font-family: "Open Sans", sans-serif;
@@ -78,7 +62,7 @@ img {
 }
 
 /*
-  HTML / Body 
+  HTML / Body ----------
 */
 html {
   scroll-behavior: smooth;
@@ -92,7 +76,7 @@ body {
 }
 
 /* 
-  Responsive font sizing 
+  Responsive font sizing ----------
 */
 html {
   font-size: 17px;
@@ -115,7 +99,7 @@ html {
 }
 
 /*
-  Headings
+  Headings ----------
 */
 
 h1,
@@ -161,7 +145,7 @@ h6 {
 }
 
 /*
-  Links
+  Links ----------
 */
 a {
   color: var(--black);
@@ -170,12 +154,20 @@ a {
 }
 
 /*
-  Text
+  Text ----------
+*/
+
+/*
+  Paragraph text
 */
 p {
   color: var(--black-20);
   font-size: var(--baseFontSize);
   margin-bottom: 1.5rem;
+  &::selection {
+    background-color: var(--main-blue);
+    color: white;
+  }
 }
 
 /*-------------------------------------
@@ -183,7 +175,7 @@ p {
 --------------------------------------*/
 
 /*
-  Containers - generally affect horizontal spacing & centering
+  Containers - generally affect horizontal spacing & centering ----------
 */
 
 .page-wrap {
@@ -209,7 +201,7 @@ p {
 }
 
 /*
-  Sections  - generally affect vertical spacing
+  Sections  - generally affect vertical spacing ----------
 */
 .section {
   margin-bottom: 3rem;
@@ -237,7 +229,7 @@ p {
 }
 
 /*
-  Page Headers
+  Page Headers ----------
 */
 .page-header {
   margin-bottom: 3rem;
@@ -254,7 +246,7 @@ p {
 }
 
 /*
-  Text Alignment
+  Text Alignment ----------
 */
 .txt-ctr {
   text-align: center;
@@ -267,7 +259,7 @@ p {
 }
 
 /*
-  Text Blocks
+  Text Blocks ----------
 */
 .txt-block {
   margin: 0 0 2rem;
@@ -277,7 +269,7 @@ p {
 }
 
 /*
-  Css Grids
+  Css Grids ----------
 */
 // .single-column-grid {
 //   display: grid;
@@ -300,28 +292,14 @@ p {
 --------------------------------------*/
 
 /*
-  Animations
+  Animations ----------
 */
 
 /*
   Hero-Box Slide-in
 */
 .hero-box {
-  -webkit-animation: 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both slide-in-left;
   animation: 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both slide-in-left;
-}
-
-@-webkit-keyframes slide-in-left {
-  0% {
-    -webkit-transform: translateX(-1000px);
-    transform: translateX(-1000px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-    opacity: 1;
-  }
 }
 @keyframes slide-in-left {
   0% {
@@ -340,31 +318,14 @@ p {
   Hero-intro Slide-in
 */
 .hero-intro {
-  -webkit-animation: 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.3s both
-    slide-in-left;
   animation: 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.3s both slide-in-left;
-}
-
-@-webkit-keyframes slide-in-left {
-  0% {
-    -webkit-transform: translateX(-1000px);
-    transform: translateX(-1000px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-    opacity: 1;
-  }
 }
 @keyframes slide-in-left {
   0% {
-    -webkit-transform: translateX(-1000px);
     transform: translateX(-1000px);
     opacity: 0;
   }
   100% {
-    -webkit-transform: translateX(0);
     transform: translateX(0);
     opacity: 1;
   }
@@ -381,7 +342,7 @@ p {
 
 .site-header {
   // border-top: 7px solid var(--main-blue);
-  background: $white;
+  background: var(--white);
   display: grid;
   gap: 10px;
   grid-template-columns: 1fr;
@@ -743,7 +704,7 @@ footer {
   position: absolute;
   top: 15px;
   left: 16px;
-  color: $white;
+  color: var(--white);
   font-weight: 700;
   font-size: 1.6rem;
   transform: rotate(-20deg);
@@ -804,7 +765,7 @@ footer {
     }
     a {
       border-bottom: 2px solid var(--main-blue);
-      color: $mid-black;
+      color: var(--black-40);
     }
   }
   h4 {
