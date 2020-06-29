@@ -174,7 +174,7 @@ p::selection {
   LAYOUT LAYOUT LAYOUT LAYOUT LAYOUT 
 --------------------------------------*/
 /*
-  Containers - generally affect horizontal spacing & centering ----------
+  Containers - generally affect horizontal spacing & centering --------------------
 */
 .page-wrap {
   margin: 0 auto;
@@ -184,13 +184,13 @@ p::selection {
 .container {
   margin: 0 auto;
   padding: 0 2rem;
-  max-width: 44.2rem;
+  max-width: 44.4rem;
   position: relative;
   z-index: 1;
 }
 
 .container--wide {
-  max-width: 75rem;
+  max-width: 70rem;
 }
 
 .container--xtra-wide {
@@ -202,20 +202,21 @@ p::selection {
 }
 
 /*
-  Sections  - generally affect vertical spacing ----------
+  Sections  - generally affect vertical spacing --------------------
 */
+/* used for normal section to create space between */
 .section {
   margin-bottom: 3rem;
 }
 
-/* used for normal section to create space between */
+/* used to create space within a section when 2 sections touch eachother
+     eg: 2 sections with diff bg colors */
 .section-spacer {
-  padding-top: 7rem;
-  padding-bottom: 7rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
-/* used to create space within a section when 2 sections touch eachother
-   eg: 2 sections with diff bg colors */
+/* used to center section inside parent element as well as center align the text */
 .section-centered {
   text-align: center;
   display: flex;
@@ -224,26 +225,26 @@ p::selection {
 }
 
 .section-prefooter {
-  margin-bottom: 100px;
+  margin-bottom: 5.8rem;
 }
 
 .section-title {
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .section-subtitle {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   font-size: 1.2rem;
 }
 
 /*
-  Page Headers ----------
+  Page Headers --------------------
 */
+/* if outside a parent container - add the left and right padding */
 .page-header {
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
-/* if outside a parent container - add the left and right padding */
 .page-header-title {
   margin-bottom: 1rem;
 }
@@ -251,48 +252,52 @@ p::selection {
 .page-header-subtitle {
   margin-bottom: 1rem;
   max-width: 80%;
-  font-size: 1.2rem;
-  color: var(--black-dk);
+  font-size: 1.1rem;
 }
 
 /*
-  Text Alignment ----------
+  Text Alignment --------------------
 */
-.txt-ctr {
+.text-center {
   text-align: center;
 }
 
-.txt-lt {
+.text-left {
   text-align: left;
 }
 
-.txt-rt {
+.text-right {
   text-align: right;
 }
 
 /*
-  Text Blocks ----------
+  Text Blocks --------------------
 */
-.txt-block {
-  margin: 0 0 2rem;
+.text-block {
+  margin: 0 0 3rem;
+}
+.text-block > :last-child {
+  margin: 0;
 }
 
-.txt-block-ctr {
-  margin: 2rem auto;
+.text-block-narrow {
+  margin: 0 0 3rem;
+  max-width: 40rem;
+}
+.text-block-narrow > :last-child {
+  margin: 0;
+}
+
+.text-block-center {
+  margin: 0 auto 3rem;
+}
+.text-block-center > :last-child {
+  margin: 0;
 }
 
 /*
   Css Grids ----------
 */
-.grid-6 {
-  display: grid;
-  gap: 15px;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: auto;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
 /*-------------------------------------
   COMPONENTS COMPONENTS COMPONENTS COMPONENTS COMPONENTS
 --------------------------------------*/
@@ -445,22 +450,18 @@ footer {
   Hero 
 */
 .hero {
-  position: relative;
   display: grid;
   grid-template-columns: 1fr;
   gap: 1em;
+  margin-bottom: 6rem;
 }
-.hero h2 {
-  font-size: 2.4em;
-  font-family: "Lora", serif;
-  font-weight: 600;
-}
-
-.hero-intro {
+.hero .hero-intro {
   grid-row: 1/span 1;
   justify-self: start;
   align-self: center;
-  z-index: 10;
+  font-size: 2.4em;
+  font-family: "Lora", serif;
+  font-weight: 600;
 }
 
 /*
@@ -613,49 +614,48 @@ footer {
 /**************************************
   ABOUT PAGE
 ***************************************/
-.tk-about {
+.about-grid {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto;
+}
+.about-grid .tk-about {
   grid-column: 1/span 3;
   grid-row: 1;
   align-self: start;
   justify-self: start;
 }
-
-.contact-info {
+.about-grid .tk-about .contact-info {
   width: 100%;
   grid-column: 1/span 3;
 }
-.contact-info a {
+.about-grid .tk-about .contact-info a {
   border-bottom: 2px solid var(--main-blue);
   transition: color 0.2s ease-in-out;
 }
-.contact-info a:hover {
+.about-grid .tk-about .contact-info a:hover {
   color: var(--main-blue);
 }
-
-.about-story {
+.about-grid .about-story {
   grid-column: 3/-1;
   grid-row: 1;
   margin-left: 10px;
 }
-.about-story p {
+.about-grid .about-story p {
   color: var(--black);
 }
 
-.jammy {
-  grid-column: 1/span 3;
-  grid-row: 2;
+.dog-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+.dog-grid .dog-wrap {
   position: relative;
   justify-self: center;
 }
-
-.hula {
-  grid-column: 4/-1;
-  grid-row: 2;
-  position: relative;
-  justify-self: center;
-}
-
-.dog-name {
+.dog-grid .dog-wrap .dog-name {
   position: absolute;
   top: 15px;
   left: 16px;
@@ -665,36 +665,21 @@ footer {
   transform: rotate(-20deg);
 }
 
-@media (max-width: 800px) {
-  .about-story {
+@media (max-width: 700px) {
+  .about-grid .tk-about {
     grid-column: 1/-1;
-    grid-row: 3;
-  }
-
-  .jammy {
-    grid-column: 1/-1;
-    grid-row: 4;
     justify-self: center;
   }
 
-  .hula {
-    grid-column: 1/-1;
-    grid-row: 5;
-    justify-self: center;
-  }
-
-  .tk-bg {
-    display: grid;
-    grid-column: 1/-1;
-  }
-
-  .tk-about {
+  .about-grid .about-story {
     grid-column: 1/-1;
     grid-row: 2;
-    justify-self: center;
   }
-  .tk-about img {
-    max-width: 100%;
+}
+@media (max-width: 700px) {
+  .dog-grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
   }
 }
 /**************************************
